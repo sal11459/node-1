@@ -1,0 +1,52 @@
+/* profiles.css */
+
+/* Profile Container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+  
+/* Individual Profile Items */
+.flex {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Highlighting Specific User */
+.flex.highlight {
+  background-color: #ffcc00; /* Yellow background for highlighting */
+}
+
+/* Profile Image */
+.flex img {
+  width: 50px;
+  height: 50px; /* Adjusted height to maintain the aspect ratio */
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* User Information */
+.info {
+  flex: 1;
+}
+
+/* Score and Submission Time */
+.score-time {
+  margin-left: 20px;
+}
+
+/* Heading Styles */
+h3 {
+  margin: 0;
+}
+
+/* Highlighting Rank 1 */
+.flex:nth-child(1) {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #ffff66; /* Light yellow background for rank 1 */
+}
